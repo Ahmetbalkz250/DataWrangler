@@ -2,7 +2,7 @@
 
 DataWrangler, Makine Öğrenmesi ve Veri Bilimi projelerindeki en büyük darboğaz olan "Kirli Veri" problemini çözmek için tasarlanmış, modern arayüzlü bir masaüstü ETL ve veri temizleme aracıdır. 
 
-Milyonlarca satırlık veri setlerini RAM'i boğmadan işler, eksik (NaN/Null) verileri otomatik olarak teşhis eder ve kullanıcıya profesyonel bir arayüz üzerinden temizleme operasyonları sunar.
+Milyonlarca satırlık veri setlerini RAM'i boğmadan işler, eksik (NaN) verileri otomatik olarak teşhis eder ve kullanıcıya profesyonel bir arayüz üzerinden temizleme operasyonları sunar.
 
 ## 🚀 Temel Özellikler
 

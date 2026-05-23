@@ -194,7 +194,7 @@ class DataWranglerApp(ctk.CTk):
             total_nans = self.df.isna().sum().sum()
             if total_nans > 0:
                 self.lbl_diagnostic.configure(
-                    text=f"Found {total_nans} missing (NaN) values in the dataset!", text_color="#f39c12")
+                    text=f"Found {total_nans} missing (NaN/None/Null) values in the dataset!", text_color="#f39c12")
             else:
                 self.lbl_diagnostic.configure(text="No missing values detected.",
                                               text_color="#2ecc71")

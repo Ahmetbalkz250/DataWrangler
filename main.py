@@ -78,7 +78,7 @@ class DataWranglerApp(ctk.CTk):
         self.tree.configure(yscrollcommand=self.scrollbar.set)
 
         # Diagnostic Label
-        self.lbl_diagnostic = ctk.CTkLabel(self.right_frame, text="Diagnostics: Please load a file to analyze.",
+        self.lbl_diagnostic = ctk.CTkLabel(self.right_frame, text="Please load a file to analyze.",
                                            text_color="#f39c12", font=ctk.CTkFont(size=14, weight="bold"))
         self.lbl_diagnostic.pack(pady=(10, 5))
 
@@ -194,9 +194,9 @@ class DataWranglerApp(ctk.CTk):
             total_nans = self.df.isna().sum().sum()
             if total_nans > 0:
                 self.lbl_diagnostic.configure(
-                    text=f"Diagnostics: Found {total_nans} missing (NaN) values in the dataset!", text_color="#f39c12")
+                    text=f"Found {total_nans} missing (NaN) values in the dataset!", text_color="#f39c12")
             else:
-                self.lbl_diagnostic.configure(text="Diagnostics: Excellent! No missing values detected.",
+                self.lbl_diagnostic.configure(text="No missing values detected.",
                                               text_color="#2ecc71")
 
     def update_table_preview(self):

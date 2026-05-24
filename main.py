@@ -170,7 +170,7 @@ class DataWranglerApp(ctk.CTk):
             elif self.current_file_ext == '.db':
                 conn = sqlite3.connect(file_path)
                 cursor = conn.cursor()
-                cursor.execute("sELECT name FROM sqlite_master WHERE type='table';")
+                cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
                 tables = cursor.fetchall()
                 if not tables:
                     self.lbl_status.configure(text="Error: No tables found in DB!", text_color="red")

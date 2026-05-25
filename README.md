@@ -12,22 +12,23 @@ it processes datasets with millions of rows without overwhelming RAM, automatica
   * **Fill and Smart Type Casting:** Fill empty cells with specific value entered by the users. if the input is text, it is automatically detected as a "string"; if it is a number, it is detected as an `integer/float`. This prevents numerical data types from being corrupted.
 * **Security Wall (Error Handling):** Features an Event-Driven error handling mechanism that prevents the `mainloop` from freezing when invalid or unsupported file formats are loaded.
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used 
 * **Python**
-* **Pandas:** Arka plandaki veri manipülasyonu ve analiz motoru.
-* **CustomTkinter:** Modern, karanlık tema destekli grafik kullanıcı arayüzü (GUI).
-* **SQLite3:** Veritabanı bağlantı ve sorgulama işlemleri (Dahili kütüphane).
+* **Pandas:** The background data manipulation and analysis engine.
+* **CustomTkinter:** For user interface(GUI).
+* **SQLite3:** Database connection and query operations (Internal library).
 
-## Programın Kullanımı
-1. Kodu çalıştırdığınız anda aşağıdaki pencere karşınıza gelir:
+## Usage Guide
+1. When you run the application, the following initial window will appear:
 
 <img width="1367" height="784" alt="Ekran görüntüsü 2026-05-23 184541" src="https://github.com/user-attachments/assets/902e31b9-511c-434a-8d06-e6ad5513b323" />
 
-2. Sol taraftaki kontrol panelinden "Select File (CSV/Excel/DB)" butonuna basıp veri temizliği yapmak istediğiniz dosyayı seçmelisiniz. Dosyayı seçtikten sonra dosyadaki eksik veriler hesaplanır ve sağ panele aşağıdaki gibi tablonuzun ilk 20 satırı gelir ve eğer herhangi bir eksik veri yoksa "No missing values detected" yazısı çıkar:
+2. Click the "Select File (CSV/Excel/DB)" button on the left pannel to choose the data file you want to clean. One selected, the program calculetes missing data, and a preview of the first 20 rows is displayed on the right panel. If the dataset is clean, "No missing values detected" massage will appear:
 
 <img width="1369" height="781" alt="Ekran görüntüsü 2026-05-23 192746" src="https://github.com/user-attachments/assets/32d6809e-ddbe-48ac-9702-5a6d6e41efb2" />
 
-3. Eğer X kadar eksik veri mevcutsa "Found X missing (NaN) values in the dataset!" şeklinde bir yazı çıkar. Eğer bu eksik veri bulunan satırları silmek isterseniz "Drop Missing Values" şeklinde olan kırmızı butona basın. Eğer istediğiniz bir değeri eksik veriler yerine girmek isterseniz "Fill Missing Values" adındaki yeşil butona basın ve istediğiniz yazıyı veya sayıyı girin. İstediğiniz işlemleri yaptıktan sonra eğer temizlenmiş veriyi kaydetmek isterseniz sol panelin altındaki "Save Cleaned Data" butonuna basıp yeni dosyayı isdetiğiniz yere kaydedebilirsiniz.
+4. If there are X missing values, a "Found X missing (NaN) values in the dataset!" message will appear. If you want to remove the rows containing '"NaN" cells, click the red "Drop Missing Values" button. If you want to enter specific values in place of the missing data, click the green "Fill Missing Values" button and enter the desired text or number. Once you have finished processing the data, click the "Save Cleaned Data" button at the bottom of the left panel to export the cleaned dataset to your preferred location.
+
 
 ## 💻 Kurulum ve Çalıştırma (Geliştiriciler İçin)
 

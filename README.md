@@ -1,18 +1,16 @@
-# DataWrangler V1.0 - Veri Ön İşleme (Data Preprocessing) Terminali
+# DataWrangler V1.0 - Data Preprocessing Terminal
+ 
+DataWrangler is a ETL and data cleaning tool to solve the "Dirty Data" problem, which is a biggest problem in the Machine Learning and Data science projects.
+it processes datasets with millions of rows without overwhelming RAM, automatically diagnoses missing (NaN) values, and offers cleaning operations to users via a interface.
 
-DataWrangler, Makine Öğrenmesi ve Veri Bilimi projelerindeki en büyük darboğaz olan "Kirli Veri" problemini çözmek için tasarlanmış, modern arayüzlü bir masaüstü ETL ve veri temizleme aracıdır. 
-
-Milyonlarca satırlık veri setlerini RAM'i boğmadan işler, eksik (NaN) verileri otomatik olarak teşhis eder ve kullanıcıya profesyonel bir arayüz üzerinden temizleme operasyonları sunar.
-
-## 🚀 Temel Özellikler
-
-* **Çoklu Format Desteği (Multi-Format I/O):** Düz metin dosyalarını (`.csv`, `.xlsx`) ve ilişkisel veritabanlarını (`.db` SQLite) sorunsuzca okur ve dışa aktarır.
-* **Akıllı Bellek Yönetimi:** Dosya boyutu ne olursa olsun (örn: 1 milyon satır), GUI'nin kilitlenmesini önlemek için ekrana sadece ilk 20 satırın (Head) önizlemesini yansıtır, asıl işlemleri arka planda ana DataFrame üzerinde yapar.
-* **Otomatik Diagnostik:** Veri yüklendiği anda arka planda tüm seti tarar ve toplam `NaN` (boş) veri hücresi sayısını tespit edip kullanıcıya bildirir.
-* **Dinamik Veri Temizliği:**
-  * **Drop (Silme):** Eksik veri barındıran tüm satırları veri setinden temizler.
-  * **Fill (Doldurma) ve Akıllı Tip Dönüşümü (Type Casting):** Boşlukları kullanıcının girdiği spesifik bir değerle doldurur. Girdi metin ise `string`, sayı ise `integer/float` olarak otomatik algılanır, böylece sayısal veri tipleri bozulmaz.
-* **Güvenlik Duvarı (Error Handling):** Hatalı veya desteklenmeyen formatlarda dosyalar yüklendiğinde `mainloop`'un kilitlenmesini engelleyen Event-Driven (Olay Güdümlü) hata yakalama mekanizmasına sahiptir.
+## Key Features
+* **Multi-Format Support (Multi-Format I/O):** Seamleslly reads end exports flat text files ('.csv', '.xlsx') and relational databases ('.db' SQLite)
+* **Smart Memory Management:** Regardless of the file size (e.g. 1 million rows), it only displays a preview of the first 20 rows on the screen to prevent the GUI freezing. It performs the actual operations on the main Dataframe in the background.
+* **Automatic Diagnostics:** When the data is loaded, it scans the entire dataset in the background and notifies the users of total number of "NaN" cells.
+* **Dynamic Data Cleaning:** 
+  * **Drop:** Removes all rows containing missing data from database.
+  * **Fill and Smart Type Casting:** Fill empty cells with specific value entered by the users. if the input is text, it is automatically detected as a "string"; if it is a number, it is detected as an `integer/float`. This prevents numerical data types from being corrupted.
+* **Security Wall (Error Handling):** Features an Event-Driven error handling mechanism that prevents the `mainloop` from freezing when invalid or unsupported file formats are loaded.
 
 ## 🛠️ Kullanılan Teknolojiler
 * **Python**

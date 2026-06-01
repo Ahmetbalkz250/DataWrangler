@@ -37,23 +37,22 @@ Install the required libraries to run the project from source code on your local
 ```bash
 pip install pandas openpyxl customtkinter
 ```
-Then run the main script:
+Then, run the main script:
 
 ```bash
 python main.py
 ```
 
-## 📦 Masaüstü Uygulaması (EXE) Haline Getirme
-Bu programı Python yüklü olmayan herhangi bir Windows bilgisayarda normal bir program (Masaüstü Uygulaması) gibi çalıştırmak isterseniz, tek tıklamalı bir .exe dosyasına dönüştürebilirsiniz.
+## 📦 Converting to a Desktop Application (EXE)
+If you want to run this program on any Windows machine without Python, you can convert it into a single-click .exe file, just like a regular desktop application.
 
-1. **PyInstaller'ı Yükleyin:** Terminalinizi (veya CMD) açıp aşağıdaki komutu girin:
+1. **Install PyInstaller:** Open your terminal (or CMD) and enter the following command:
 ```bash
 pip install pyinstaller
 ```
-2. **EXE Dosyasını Oluşturun:** Proje klasörünüzün içinde terminali açın ve şu komutu çalıştırın:
+2. **Build the exe file:** Open the terminal within the project folder and run the following command:
 ```bash
 pyinstaller --noconsole --onefile main.py
 ```
-Not: --noconsole parametresi, program çalışırken arkada siyah CMD penceresinin açılmasını engeller, sadece arayüz görünür.
-
-3. **Programı Çalıştırın:** İşlem bittiğinde proje klasörünüzde "dist" adında yeni bir klasör oluşacak. Bu klasörün içindeki "main.exe" dosyasını masaüstüne alıp istediğiniz gibi kullanabilirsiniz.
+Note: The --noconsole parameter prevents the command window from appearing in the backgraund while runing the program, ensuring the only GUI (Graphical User Interface) is displayed
+3. **Run the program:** You can use the "main.exe" file in this foulder as you desire, or even you copy this file to any location you want. 

@@ -30,14 +30,14 @@ it processes datasets with millions of rows without overwhelming RAM, automatica
 4. If there are X missing values, a "Found X missing (NaN) values in the dataset!" message will appear. If you want to remove the rows containing '"NaN" cells, click the red "Drop Missing Values" button. If you want to enter specific values in place of the missing data, click the green "Fill Missing Values" button and enter the desired text or number. Once you have finished processing the data, click the "Save Cleaned Data" button at the bottom of the left panel to export the cleaned dataset to your preferred location.
 
 
-## 💻 Kurulum ve Çalıştırma (Geliştiriciler İçin)
+## 💻 Installation & Setup (For Developers)
 
-Projeyi kendi bilgisayarınızda kod olarak çalıştırmak için gerekli kütüphaneleri kurun:
+Install the required libraries to run the project from source code on your local machine:
 
 ```bash
 pip install pandas openpyxl customtkinter
 ```
-Ardından ana dosyayı çalıştırın:
+Then run the main script:
 
 ```bash
 python main.py

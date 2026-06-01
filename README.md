@@ -54,6 +54,6 @@ pip install pyinstaller
 ```bash
 pyinstaller --noconsole --onefile main.py
 ```
-Note: The --noconsole parameter prevents the command window from appearing in the backgraund while runing the program, ensuring the only GUI (Graphical User Interface) is displayed
+Note: The --noconsole parameter prevents the command window from appearing in the backgraund while running the program, ensuring the only GUI (Graphical User Interface) is displayed
 
 3. **Run the program:** You can use the "main.exe" file in this foulder as you desire, or even you copy this file to any location you want. 
